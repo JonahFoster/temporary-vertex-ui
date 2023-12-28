@@ -1245,3 +1245,50 @@ body{
   font-weight: 700;
   line-height: normal;
 }
+
+@media screen and (max-width: 600px) {
+  .rows-container {
+    margin: 0 auto; /* Center the rows container */
+    width: 90%; /* Adjust the width for mobile */
+}
+
+  .circle-row {
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 0;
+  }
+
+  .circle-container {
+      width: 48%; /* Set width to create two columns, adjust for spacing */
+      margin-bottom: 3em; /* Space between rows */
+  }
+
+  .resource-container, .trauma-resource-container {
+      height: auto; /* Adjust height to accommodate new layout */
+      padding-bottom: 20px; /* Add some padding at the bottom */
+      width: 80%;
+  }
+
+  .top {
+    margin: 0;
+  }
+
+  .progress-bar {
+    width: 60%;
+    margin-top: 1em;
+  }
+
+  .progress-bar-label {
+    font-size: 0.8em;
+    padding: 0;
+    padding-right: 1px;
+    text-align: center;
+  }
+
+  .trauma-divider {
+    width: 100%;
+  }
+
+  .trauma-content-container {
+    width: 80%;
+  }
+}
